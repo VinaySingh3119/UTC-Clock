@@ -31,13 +31,9 @@ function abc() {
     jh1[4].innerHTML = secd;
     jh1[5].innerHTML = ampm;
 
-    // var mytime = `${hour} : ${mint} : ${secd} ${ampm}`;
 
-    // var jh = document.getElementsByTagName("h1");
 
-    // jh[0].innerHTML = mytime;
-
-    var hourDeg = hour * 5 * (6 + mint / 60) - 90;
+    var hourDeg = ((hour % 12) * 30) + (mint * 0.5) + (secd * (0.5 / 60)) - 90;
     var mintDeg = mint * 6 - 90;
     var secdDeg = secd * 6 - 90;
 
