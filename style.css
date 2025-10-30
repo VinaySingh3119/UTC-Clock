@@ -1,5 +1,5 @@
 *{
-    font-family: 'consolas';
+    font-family: "Bungee Inline", sans-serif;
 }
 
 .clock{
@@ -29,6 +29,7 @@
     text-align: center;
     border-radius: 20px;
     background-color: rgba(247, 232, 232, 0.199);
+    box-shadow: 10px 10px 20px #babecc , -10px -10px 20px #ffffff;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -37,23 +38,26 @@
 .digital-clock div:last-child{
     border-radius: 10px;
     margin-top: 10px;
+    color: #386fc2;
     background-color: rgba(247, 232, 232, 0.199);
 }
 
 .digital-clock h1{
+    color: #386fc2;
     font-size: 45px;
     border-radius: 10px;
     background-color: rgba(232, 239, 247, 0.308);
     margin: 5px;
+    text-shadow: 0 0 8px #34F1FF, 0 0 15px #34F1FF;
 }
 
 .analog-clock-border{
     height: 100%;
     width: 50%;
-    border: 2px solid;
+    /* border: 2px solid; */
     border-radius: 100%;
     padding: 10px;
-    background-color: #04255A;
+    background: linear-gradient(135deg,  #1d4fb8, #2055a5, #05354e);
     box-sizing: border-box;
 }
 
@@ -63,7 +67,8 @@
     width: 100%;
     border-radius: 100%;
     position: relative;
-    background-color: rgba(232, 239, 247, 0.308);
+    background: linear-gradient(135deg, #004e92, #34b8cfec, #040e63);
+    box-shadow: 10px 10px 20px #bcc2d8 , -10px -10px 20px #518dd1;
 }
 
 .analog-clock .hand{
@@ -90,75 +95,77 @@
 
 .analog-clock span{
     position: absolute;
+    color: #004e92;
+    text-shadow: 0 0 8px #34F1FF, 0 0 15px #34F1FF;
 }
 .analog-clock span:nth-child(12){
     left: 50%;
-    top: 0%;
+    top: 1%;
     transform: translate(-50%, 0);
 }
 
 .analog-clock span:nth-child(1){
-    left: 75%;
-    top: 10%;
+    left: 74%;
+    top: 11%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(2){
-    left: 88%;
-    top: 25%;
+    left: 90%;
+    top: 27%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(3){
-    left: 100%;
+    left: 99%;
     top: 50%;
     transform: translate(-100%, -50%);
 }
 
 .analog-clock span:nth-child(4){
-    left: 88%;
-    top: 75%;
+    left: 90%;
+    top: 70%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(5){
-    left: 75%;
-    top: 88%;
+    left: 74%;
+    top: 87%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(6){
     left: 50%;
-    top: 100%;
+    top: 99%;
     transform: translate(-50%, -100%);
 }
 
 .analog-clock span:nth-child(7){
     left: 25%;
-    top: 88%;
+    top: 87%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(8){
-    left: 8%;
-    top: 74%;
+    left: 9%;
+    top: 72%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(9){
-    left: 0%;
+    left: 1%;
     top: 50%;
     transform: translate(0, -50%);
 }
 
 .analog-clock span:nth-child(10){
-    left: 12%;
-    top: 25%;
+    left: 11%;
+    top: 29%;
     transform: translate(-50%, -50%);
 }
 
 .analog-clock span:nth-child(11){
-    left: 25%;
-    top: 10%;
+    left: 28%;
+    top: 11%;
     transform: translate(-50%, -50%);
 }
