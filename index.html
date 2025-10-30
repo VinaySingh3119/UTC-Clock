@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        @import url("style.css");
+    </style>
+</head>
+
+<body>
+
+    <div class="clock">
+        <div class="digital-clock">
+            <div>
+                <h1></h1>
+                <h1>:</h1>
+                <h1></h1>
+                <h1>:</h1>
+                <h1></h1>
+                <h1></h1>
+            </div>
+
+            <div>
+                <input type="radio" name="timeZone" value="12h">12h</input>
+                <input type="radio" name="timeZone" value="24h">24h</input>
+            </div>
+        </div>
+
+        <div class="analog-clock-border">
+            <div class="analog-clock">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+                <div class="hand hour"></div>
+                <div class="hand minute"></div>
+                <div class="hand second"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

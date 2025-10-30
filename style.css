@@ -1,0 +1,164 @@
+*{
+    font-family: 'consolas';
+}
+
+.clock{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background: linear-gradient(#04255A, #0588CD, #DDC9FF);
+}
+
+.digital-clock{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+}
+
+.digital-clock div:first-child{
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(247, 232, 232, 0.199);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.digital-clock div:last-child{
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(247, 232, 232, 0.199);
+}
+
+.digital-clock h1{
+    font-size: 45px;
+    border-radius: 10px;
+    background-color: rgba(232, 239, 247, 0.308);
+    margin: 5px;
+}
+
+.analog-clock-border{
+    height: 100%;
+    width: 50%;
+    border: 2px solid;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #04255A;
+    box-sizing: border-box;
+}
+
+
+.analog-clock{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: relative;
+    background-color: rgba(232, 239, 247, 0.308);
+}
+
+.analog-clock .hand{
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    border: 2px solid white;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(0deg);
+}
+
+.analog-clock .hour{
+    width: 30%;
+}
+.analog-clock .minute{
+    width: 35%;
+}
+.analog-clock .second{
+    width: 36%;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.analog-clock span{
+    position: absolute;
+}
+.analog-clock span:nth-child(12){
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0);
+}
+
+.analog-clock span:nth-child(1){
+    left: 75%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(2){
+    left: 88%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(3){
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.analog-clock span:nth-child(4){
+    left: 88%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(5){
+    left: 75%;
+    top: 88%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(6){
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.analog-clock span:nth-child(7){
+    left: 25%;
+    top: 88%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(8){
+    left: 8%;
+    top: 74%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(9){
+    left: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.analog-clock span:nth-child(10){
+    left: 12%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.analog-clock span:nth-child(11){
+    left: 25%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
